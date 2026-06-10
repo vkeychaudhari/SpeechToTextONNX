@@ -29,7 +29,7 @@ Before running the application, download the required structural weights from th
 ### 2. Solution Layout Setup
 Place the downloaded binaries directly inside your active execution directory, or add them directly to your Visual Studio Solution Explorer under the following configuration rules:
 ```text
-WhiteboardApp/
+SpeechToText/
 │
 ├── bin/Debug/net8.0-windows/
 │   ├── encoder_model.onnx
