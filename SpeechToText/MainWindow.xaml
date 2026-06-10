@@ -1,0 +1,18 @@
+﻿<Window x:Class="SpeechToText.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpeechToText"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Margin="20">
+
+        <Button x:Name="BtnRecord" Content="Start Recording (बोलणे सुरू करा)" Height="40" Click="BtnRecord_Click"/>
+        <Button x:Name="BtnStop" Content="Stop &amp; Process (थांबा आणि प्रोसेस करा)" Height="40" Margin="0,10,0,0" IsEnabled="False" Click="BtnStop_Click"/>
+
+        <TextBlock Text="Result:" FontWeight="Bold" Margin="0,20,0,5"/>
+        <TextBox x:Name="TxtResult" Height="100" TextWrapping="Wrap" IsReadOnly="True" Background="#F0F0F0"/>
+
+    </StackPanel>
+</Window>
